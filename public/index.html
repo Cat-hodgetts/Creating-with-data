@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- this sets the document to be in the format of a html document -->
+<html lang="en">
+<!-- this sets the language to english -->
+
+<head>
+    <meta charset="UTF-8" /> <!-- This default setting for character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- This sets the size of the page, viewport makes the page responsive -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /><!-- this sets what browsers your site supports -->
+    <title>Profanity tracker</title> <!-- This sets tite of the page to Profanity tracker -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script> <!-- This includes the Chart.js library -->
+
+     <link rel="icon" href="swear.png" type="image/png" sizes="16x16"> <!-- This sets the images used as the favicon -->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- This imports the CSS file  -->
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+   <!--  This allows the file to use a google font -->
+   <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'> <!--  This allows the file to use a google font -->
+</head>
+
+<body>
+    <h1>Profanity tracker</h1>
+    <!--  This sets the text for the header -->
+    <p>
+        <label for="Profanity">How many times have you sworn today?</label> <!-- This places a lable on the page and relates it to the data named -->
+        <br> <!-- This puts the next item on a new line -->
+        <input type="text" id="Profanity" min="1" max="10" value=""> <!-- This places a text box on the page and calls any data input 'Profanity' -->
+        <br><br> <!-- This places two empty lines between the two items -->
+        <label for="happiness">How do you feel on a scale from 1-10?</label> <!-- This places a lable on the page and relates it to the data named -->
+        <br><!-- This puts the next item on a new line -->
+        <input type="range" id="happiness" min="0" max="10" value="5" oninput="sliderChange(this.value)"> <!-- This places a slider on the page with the ability to input valuees from 0-10 and calls any data input 'Happiness' -->
+        <output id="sliderVal"> </output> <!-- This causes the number of the relative value on the slider to be displayed next to the slider -->
+        <br> <!-- This puts the next item on a new line -->
+        <button id="submit1">submit</button> <!-- This adds a submit button to the page -->
+    </p>
+    <canvas id="chart" width="400" height="180"></canvas> <!-- This sets the canvas width and height -->
+</body>
+<script src="graph.js"></script>
+<!-- This inputs the javascript file into the page -->
+
+
+</html>

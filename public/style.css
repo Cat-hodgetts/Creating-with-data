@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    /*This sets the text within h1 tags to be in the center of the page*/
+    color: black;
+    /*This sets the colour of the text in h1 tags to be red*/
+   font-family: 'Alex Brush';font-size: 48px;
+   /*This sets the font for the header */
+}
+
+
+p {
+    text-align: center;
+    /*This sets the text within p tags to be in the center of the page*/
+    color: black;
+    /*This sets the colour of the text in p tags to be red*/
+    font-family: 'Amita';font-size: 18px;
+     /*This sets the font for the paragraph */
+
+}
+
+body {
+    background-image: url("gradient1.jpg");
+    /*This sets the images that isused for the background of the page*/
+
+}
